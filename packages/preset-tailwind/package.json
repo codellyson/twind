@@ -37,7 +37,7 @@
       "name": "@twind/preset-tailwind",
       "path": "dist/preset-tailwind.esnext.js",
       "brotli": true,
-      "limit": "9.6kb",
+      "limit": "9.7kb",
       "ignore": [
         "twind"
       ]
@@ -58,7 +58,7 @@
       "name": "@twind/preset-tailwind/base",
       "path": "dist/base.esnext.js",
       "brotli": true,
-      "limit": "8.6kb",
+      "limit": "8.7kb",
       "ignore": [
         "twind"
       ]

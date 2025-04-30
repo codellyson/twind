@@ -350,6 +350,20 @@ const rules: Rule<TailwindTheme>[] = [
   // Max-Height
   matchTheme('max-h-', 'maxHeight'),
 
+  // Size (width and height)
+  matchTheme('size-', 'width', ({ _ }) => ({
+    width: _,
+    height: _,
+  })),
+
+  // Line Clamp
+  match('line-clamp-', ({ 1: $1 }) => ({
+    display: '-webkit-box',
+    '-webkit-line-clamp': $1,
+    '-webkit-box-orient': 'vertical',
+    overflow: 'hidden',
+  })),
+
   /* TYPOGRAPHY */
   // Font Weight
   matchTheme('font-', 'fontWeight'),
